@@ -14,5 +14,11 @@ angular.module('capacitameApp')
       'AngularJS',
       'Karma'
     ];
-    
+    var vms = this;
+    vms.menusTemplate = {
+    	url: 'views/menu_sinlogin.html'
+    };
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
   });

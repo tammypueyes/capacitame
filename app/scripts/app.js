@@ -41,6 +41,11 @@ angular
         controller: 'MisCapacitacionesCtrl',
         controllerAs: 'misCapacitaciones'
       })
+      .when('/menu_sinlogin', {
+        templateUrl: 'views/menu_sinlogin.html',
+        controller: 'MenuSinloginCtrl',
+        controllerAs: 'menuSinlogin'
+      })
       .otherwise({
         redirectTo: '/'
       });
