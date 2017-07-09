@@ -2,22 +2,31 @@
 
 /**
  * @ngdoc function
- * @name capacitameApp.controller:MenuCtrl
+ * @name capacitameApp.controller:RegistrarseCtrl
  * @description
- * # MenuCtrl
+ * # RegistrarseCtrl
  * Controller of the capacitameApp
  */
 angular.module('capacitameApp')
-  .controller('MenuCtrl', function () {
+  .controller('RegistrarseCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $( document ).ready(function(){
-       $('.button-collapse').sideNav();
+    var vms = this;
+    vms.menusTemplate = {
+    	url: 'views/menu_sinlogin.html'
+    };
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
+	  $('select').material_select();
+  
+        $('.button-collapse').sideNav();
         $('.button-collapse').sideNav('hide');
       $('.dropdown-button').dropdown({ hover: true, constrain_width: true, belowOrigin: true, alignment: 'right' });
-      });
       
+      
+    });
   });

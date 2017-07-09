@@ -2,20 +2,17 @@
 
 /**
  * @ngdoc function
- * @name capacitameApp.controller:MisCapacitacionesCtrl
+ * @name capacitameApp.controller:VercapacitacionCtrl
  * @description
- * # MisCapacitacionesCtrl
+ * # VercapacitacionCtrl
  * Controller of the capacitameApp
  */
 angular.module('capacitameApp')
-  .controller('MisCapacitacionesCtrl', function () {
+  .controller('VercapacitacionCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    var vm = this;
-    vm.menuTemplate = {
-    	url: 'views/menu.html'
-    };
+   
   });

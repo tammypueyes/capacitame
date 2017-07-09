@@ -36,8 +36,8 @@ angular
         controller: 'MenuCtrl',
         controllerAs: 'menu'
       })
-      .when('/mis_capacitaciones', {
-        templateUrl: 'views/mis_capacitaciones.html',
+      .when('/miscapacitaciones', {
+        templateUrl: 'views/miscapacitaciones.html',
         controller: 'MisCapacitacionesCtrl',
         controllerAs: 'misCapacitaciones'
       })
@@ -45,6 +45,51 @@ angular
         templateUrl: 'views/menu_sinlogin.html',
         controller: 'MenuSinloginCtrl',
         controllerAs: 'menuSinlogin'
+      })
+      .when('/usuariologueado', {
+        templateUrl: 'views/usuariologueado.html',
+        controller: 'UsuarioLogueadoCtrl',
+        controllerAs: 'usuarioLogueado'
+      })
+      .when('/capacitaciones', {
+        templateUrl: 'views/capacitaciones.html',
+        controller: 'CapacitacionesCtrl',
+        controllerAs: 'capacitaciones'
+      })
+      .when('/vercapacitacion', {
+        templateUrl: 'views/vercapacitacion.html',
+        controller: 'VercapacitacionCtrl',
+        controllerAs: 'verCapacitacion'
+      })
+      .when('/principal', {
+        templateUrl: 'views/principal.html',
+        controller: 'PrincipalCtrl',
+        controllerAs: 'principal'
+      })
+      .when('/micapacitacion', {
+        templateUrl: 'views/micapacitacion.html',
+        controller: 'MicapacitacionCtrl',
+        controllerAs: 'micapacitacion'
+      })
+      .when('/comprar', {
+        templateUrl: 'views/comprar.html',
+        controller: 'ComprarCtrl',
+        controllerAs: 'comprar'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
+      .when('/sercapacitador', {
+        templateUrl: 'views/sercapacitador.html',
+        controller: 'SercapacitadorCtrl',
+        controllerAs: 'sercapacitador'
+      })
+      .when('/registrarse', {
+        templateUrl: 'views/registrarse.html',
+        controller: 'RegistrarseCtrl',
+        controllerAs: 'registrarse'
       })
       .otherwise({
         redirectTo: '/'

@@ -2,22 +2,25 @@
 
 /**
  * @ngdoc function
- * @name capacitameApp.controller:MenuCtrl
+ * @name capacitameApp.controller:CapacitacionesCtrl
  * @description
- * # MenuCtrl
+ * # CapacitacionesCtrl
  * Controller of the capacitameApp
  */
 angular.module('capacitameApp')
-  .controller('MenuCtrl', function () {
+  .controller('CapacitacionesCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $( document ).ready(function(){
+    var vm = this;
+    vm.menuTemplate = {
+    	url: 'views/menu.html'
+    };
+     $( document ).ready(function(){
        $('.button-collapse').sideNav();
         $('.button-collapse').sideNav('hide');
       $('.dropdown-button').dropdown({ hover: true, constrain_width: true, belowOrigin: true, alignment: 'right' });
       });
-      
   });

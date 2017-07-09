@@ -1,12 +1,19 @@
  <!--Menu sin login --> 
-
+<ul id="dropdown1" class="dropdown-content">
+    <li><a ng-href="/#!/login">Inciar Sesión</a></li>
+    <li><a ng-href="/#!/registrarse">Registrarse</a></li>
+    
+  </ul>
     <nav>
     <div class="nav-wrapper blue-grey darken-4">
       
       <ul class="left hide-on-med-and-down">
-        <li><a href="#!/main">Inicio</a></li>
-        <li><a href="">quienes somos</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a ng-href="#!/main">Inicio</a></li>
+        <li><a ng-href="">quienes somos</a></li>
+        <li><a ng-href="">Contacto</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button"  data-activates="dropdown1">Bienvenido<i class="material-icons right">account_circle</i></a></li>
       </ul>
     </div>
   </nav>
