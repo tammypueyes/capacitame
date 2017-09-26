@@ -15,10 +15,10 @@
         	</thead>
 
         <tbody>
-          <tr>
-            <td>Desarrollo de Apps</td>
-            <td>Eclair</td>
-            <td>5 creditos</td>
+          <tr ng-repeat="p in proyecto">
+            <td>{{p.nombre}}</td>
+            <td>{{p.metodologia}}</td>
+            <td>{{p.valor}}</td>
           </tr>
         </tbody>
       </table>
@@ -27,11 +27,11 @@
 </div>
 <div class="row">
   <div class="col s12 m4 18">
-        
-    <a href="#!" class="waves-effect waves-orange orange btn ">Pagar</a> 
-
-    <div class="col s6 m4 40">
-      <a class="waves-effect waves-orange orange btn">Cancelar</a>
-    </div>
+    <button class="btn waves-effect waves-light orange" ng-click="myFunction2()" type="submit" name="action" ng-href="/#!/principal" >Pagar</button> 
   </div> 
-</div>    
+  <div class="col s6 m4 40">
+      <div class="col s12 m4 18">
+    <button class="btn waves-effect waves-light orange" ng-click="myFunction3()" type="submit" name="action" ng-href="/#!/principal">Cancelar</button> 
+  </div> 
+    </div>
+</div> 

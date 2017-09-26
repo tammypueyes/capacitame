@@ -91,6 +91,11 @@ angular
         controller: 'RegistrarseCtrl',
         controllerAs: 'registrarse'
       })
+      .when('/contacto', {
+        templateUrl: 'views/contacto.html',
+        controller: 'ContactoCtrl',
+        controllerAs: 'contacto'
+      })
       .otherwise({
         redirectTo: '/'
       });

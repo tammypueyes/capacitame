@@ -1,4 +1,4 @@
-<div ng-include="principal.menuTemplate.url"></div>
+<div ng-include="'views/menu.html'"></div>
 
   <div class="slider">
     <ul class="slides">
@@ -51,7 +51,7 @@
       <option value="1">Area Agronegocios</option>
     </select>
     <div class="container">
-    <a class="waves-effect waves-light orange btn" ng-href="/capacitaciones">Buscar<i class="material-icons">search</i></a>
+    <a class="waves-effect waves-light orange btn" ng-href="#!/capacitaciones">Buscar<i class="material-icons">search</i></a>
     </div>
     
 </div>
@@ -68,13 +68,13 @@
 <div class="row">
   
         <div class="col s12 m6 l3">
-          <div class="card">
+          <div ng-repeat="b in miscapacitaciones" class="card">
             <div class="card-image">
               <img src="images/tammy.jpg">
-              <span class="card-title black">Herramientas empresariales</span>
+              <span class="card-title black">{{b.nombre}}</span>
             </div>
             <div class="card-content">
-              <p>Curso a través del cual se entregarán conocimientos que permitan fortalecer el negocio o emprendimiento creativo, otorgando la oportunidad de aprender cómo organizar un negocio que refleje los valores creativos del emprendedor, sistematizados dentro de una estrategia de negocio sostenible, mientras comparten </p>
+              <p>{{b.descripcion}}</p>
             </div>
             <div class="card-action">
               <a ng-href="/#!/capacitaciones">Ver</a>
@@ -83,50 +83,7 @@
        
        </div>
   
-        <div class="col s12 m6 l3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/mauricio.jpg">
-              <span class="card-title black">Programadores de Software         </span>
-            </div>
-            <div class="card-content">
-              <p>Curso de formación de 8 meses, destinado a generar las capacidades para la programación en lenguaje JAVA, por medio de una metodología de aprendizaje activa, fuertemente ligada a la industria TIC de la región y al mundo laboral; a la vez, desarrollar las competencias personales para una efectiva inserción al mundo del trabajo.</p>
-            </div>
-            <div class="card-action">
-              <a href="/ver_capacitacion">Ver</a>
-            </div>
-          </div>
-        </div>
-      
-      <div class="col s12 m6 l3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/diego.jpg">
-              <span class="card-title black">Inocuidad Alimnentaria</span>
-            </div>
-            <div class="card-content">
-              <p>Curso de actualización de normativas y reglamentos de Inocuidad Alimentaria, (HACCP, BRC, Food Safety Modification Act FDA, entre otros) con una duración de 43 horas presenciales. Los módulos a desarrollar serán los siguientes: Introducción a los conceptos de inocuidad y calidad de los alimentos, Normativas nacionales</p>
-            </div>
-            <div class="card-action">
-              <a href="/ver_capacitacion">Ver</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col s12 m6 l3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/seba.jpg">
-              <span class="card-title black">Especialización en Esquila</span>
-            </div>
-            <div class="card-content">
-              <p>Curso de especialización en esquila, enfocado en la mano de obra que se desempeña trabajando o que eventualmente pudiera comenzar a trabajar en las cuadrillas de esquila y en los predios dedicados a la producción ovina. El curso tiene como objetivo central la enseñanza de la correcta técnica de esquila “tally hi”, que permita</p>
-            </div>
-            <div class="card-action">
-              <a href="/ver_capacitacion">Ver</a>
-            </div>
-          </div>
-        </div>
+        
 </div>
 <br><br>
   <div class="jumbotron">

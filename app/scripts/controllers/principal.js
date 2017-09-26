@@ -8,12 +8,23 @@
  * Controller of the capacitameApp
  */
 angular.module('capacitameApp')
-  .controller('PrincipalCtrl', function () {
+  .factory('Miscapacitaciones', ['$resource', function ($resource) {
+        return $resource('http://localhost/capacitameAPI/Miscapacitaciones/:id', {id: "@_id"}, {
+            update: {method: "PUT", params: {id: "@_id"}}
+        })
+    }])
+  .controller('PrincipalCtrl', function ($scope, Miscapacitaciones, $route) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+    Miscapacitaciones.get(function (data) {
+            $scope.miscapacitaciones = data.response;
+        })
+
+        
+
     var vm = this;
     vm.menuTemplate = {
       url: 'views/menu.html'

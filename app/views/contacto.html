@@ -1,0 +1,33 @@
+<div ng-include="contacto.menusTemplate.url"></div>
+<iframe src="https://www.google.com/maps/d/embed?mid=1usVWxtprC7mcqZLrCypyUDmn6H8" width="1640" height="480"></iframe>
+<div class="container">
+	<h3>Contáctanos</h3>
+	<div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Nombre Completo</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Email</label>
+        </div>
+    </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Asunto</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Mensaje</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light orange" ng-click="myFunction()" type="submit" name="action">Enviar
+    <i class="material-icons right">send</i>
+  </button>
+</div>
+<br>
