@@ -4,7 +4,7 @@
   <div class="section white">
     <div class="row container">
       <h2 class="header">Login</h2>
-      <form class="col s12">
+      <!-- <form class="col s12">
       <div class="row">
         <div class="input-field col s4">
           <i class="material-icons prefix">account_circle</i>
@@ -19,6 +19,20 @@
      </div>
      <a class="waves-effect waves-red orange btn" ng-href="/#!/principal"><i class="material-icons left">input</i>Ingresar</a>
      <a class="waves-effect waves-yellow  orange btn" ng-href="/#!/registrarse"><i class="material-icons left">mode_edit</i>Registrarse</a>
+    </form> -->
+    <form action="">
+      <div>
+        <input type="text" placeholder="Rut" required="" id="username" ng-model="user"  />
+      </div>
+      <div>
+        <input type="password" placeholder="Password" required="" id="password" ng-model="pswd"/>
+      </div>
+      <div class="alert" role="alert" ng-show="errorMsg">{{errorMsg}}</div>
+      <div>    
+
+        <input class="waves-effect waves-red blue btn" ng-disabled="login.$invalid" type = "button" value = "LOGIN" ng-click = "insertdata()" id = "butt"/>   
+        <a class="waves-effect waves-yellow  red btn" ng-href="/#!/registro"><i class="material-icons left">mode_edit</i>Registrarse</a>     
+      </div>
     </form>
     </div>
   </div>

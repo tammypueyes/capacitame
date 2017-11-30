@@ -22,6 +22,15 @@ angular.module('capacitameApp')
     Miscapacitaciones.get(function (data) {
             $scope.miscapacitaciones = data.response;
         })
+    $scope.buscar=function(tipo){
+      Miscapacitaciones.get({tipo: tipo}).$promise.then(function(data){
+        if(data.reponse){
+          $scope.miscapacitaciones = data.response;
+        }
+      }) 
+
+    }
+
 
         
 
